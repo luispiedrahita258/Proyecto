@@ -1,82 +1,74 @@
-*{
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.wrap{
-	width: 800px;
-	max-width: 90%;
-	margin: 30px auto;
+.wrap {
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto;
 }
 
-ul.tabs{
-	width: 100%;
-	background: #363636;
-	list-style: none;
-	display: flex;
+ul.tabs {
+    width: 100%;
+    background: #363636;
+    list-style: none;
+    display: flex;
 }
 
-ul.tabs li{
-	width: 18%
+ul.tabs li {
+    width: 18%
 }
 
-
-ul.tabs li a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 16px;
+ul.tabs li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
     text-align: center;
-
-	display: block;
-	padding: 20px 0px;
-
-
-
+    display: block;
+    padding: 20px 0px;
 }
 
-.active{
-	background: #92c6e4;
+.active {
+    background: #4e73df;
 }
 
-ul.tabs li a .tab-text{
-	margin-left: 8px;
+ul.tabs li a .tab-text {
+    margin-left: 8px;
 }
 
-.secciones{
-	width: 100;
-	background: #fff;
-
+.secciones {
+    width: 100;
+    background: #fff;
 }
 
-.secciones article{
-	padding: 30px;
+.secciones article {
+    padding: 30px;
 }
 
-.secciones article p{
-	text-align: justify;
+.secciones article p {
+    text-align: justify;
 }
 
-@media screen and (max-width: 700px){
-	ul.tabs li{
-		width: none;
-		flex-basis: 0;
-		flex-grow: 1;
-	}
+@media screen and (max-width: 700px) {
+    ul.tabs li {
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
 }
 
-@media screen and (max-width: 450px){
-	ul.tabs.li a{
-		padding: 15px 0 px;
-	}
-ul.tabs li a .tab-text{
+@media screen and (max-width: 450px) {
+    ul.tabs.li a {
+        padding: 15px 0 px;
+    }
+    ul.tabs li a .tab-text {
         display: none;
-}
-.secciones article{
-	padding: 20px;
-}
-
-
+    }
+    .secciones article {
+        padding: 20px;
+    }
 }

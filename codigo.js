@@ -1,4 +1,4 @@
-$('#formLogin').submit(function (e) {
+$('#formLogin').submit(function(e) {
     e.preventDefault();
     var usuario = $.trim($("#usuario").val());
     var password = $.trim($("#password").val());
@@ -18,7 +18,7 @@ $('#formLogin').submit(function (e) {
                 usuario: usuario,
                 password: password
             },
-            success: function (data) {
+            success: function(data) {
                 if (data == "null") {
                     Swal.fire({
                         type: "error",
@@ -31,8 +31,8 @@ $('#formLogin').submit(function (e) {
                         confirmButtonColor: "#3885d6",
                         confirmButtonText: "Ingresar"
                     }).then((result) => {
-                      if (result.value) {
-                          window.location.href = "index.php";  
+                        if (result.value) {
+                            window.location.href = "index.php";
 
                         }
                     })
